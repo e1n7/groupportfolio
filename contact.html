@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER (same on every page; only the "active" class moves) -->
+  <header>
+    <div class="logo">Group Portfolio</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <!-- MAIN: contact page content -->
+  <main>
+    <h1>Get In Touch</h1>
+
+    <div class="contact-box">
+
+      <!-- LEFT column: availability / location -->
+      <div class="info-column">
+        <h3>Team Availability</h3>
+        <div class="bar"></div>
+        <p>Monday to Friday<br>1:00 PM - 5:00 PM</p>
+
+        <h3>Campus Lab</h3>
+        <div class="bar"></div>
+        <p>Computer Laboratory<br>Room 101</p>
+      </div>
+
+      <!-- RIGHT column: inquiry form -->
+      <div class="form-column">
+        <form action="#" method="post">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER (same on every page) -->
+  <footer>
+    <p>Group Portfolio</p>
+  </footer>
+
+</body>
+</html>

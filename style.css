@@ -1,0 +1,230 @@
+/* =========================================================
+   GROUP PORTFOLIO - style.css  (used by all 3 pages)
+   Sections: 1 Reset/Body, 2 Header+Nav, 3 Main, 4 Home,
+             5 Team, 6 Contact, 7 Footer
+   ========================================================= */
+
+/* ---------- 1. RESET / BODY ---------- */
+* {
+  box-sizing: border-box;   /* width includes padding + border (easier math) */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e7eaee;
+  color: #1f2430;
+}
+
+/* ---------- 2. HEADER + NAVIGATION ---------- */
+header {
+  background-color: #28334a;
+  padding: 0 55px;
+  overflow: hidden;          /* lets the header wrap its floated children */
+}
+
+.logo {
+  float: left;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 80px;         /* makes the header 80px tall */
+}
+
+nav {
+  float: right;
+}
+
+nav a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;     /* removes underline from links */
+  font-size: 20px;
+  line-height: 76px;
+  padding: 0 18px;
+  border-bottom: 4px solid transparent;   /* invisible until hover/active */
+}
+
+nav a:hover {
+  background-color: #3a4864;
+  border-bottom: 4px solid #6f87a3;
+}
+
+nav a.active {
+  border-bottom: 4px solid white;         /* active page indicator */
+}
+
+/* ---------- 3. MAIN (shared by all pages) ---------- */
+main {
+  min-height: 580px;
+  padding: 40px 20px;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 44px;
+  margin: 0 0 30px 0;
+}
+
+/* ---------- 4. HOME PAGE ---------- */
+.hero {
+  text-align: center;
+  padding-top: 130px;
+}
+
+.hero h1 {
+  font-size: 54px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 22px;
+  max-width: 480px;
+  margin: 0 auto 25px auto;  /* auto left/right = centered */
+}
+
+.btn {
+  display: inline-block;
+  background-color: #2f72c4;
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 16px 30px;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background-color: #1f5aa3;
+}
+
+/* ---------- 5. TEAM PAGE ---------- */
+.team-grid {
+  max-width: 1080px;         /* wide enough for 4 cards per row */
+  margin: 0 auto;
+  text-align: center;        /* centers the cards in each row */
+}
+
+.card {
+  display: inline-block;     /* cards sit side by side */
+  vertical-align: top;
+  width: 235px;
+  min-height: 235px;         /* keeps all cards the same height */
+  margin: 0 5px 20px 5px;
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #d5d9de;
+  border-radius: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+  border-color: #2f72c4;
+}
+
+.card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;        /* makes the photo a circle */
+  object-fit: cover;         /* keeps photos from looking squished */
+}
+
+.card h3 {
+  margin: 10px 0 5px 0;
+  font-size: 22px;
+}
+
+.card p {
+  margin: 0;
+  font-size: 19px;
+  color: #6b7078;
+}
+
+/* ---------- 6. CONTACT PAGE ---------- */
+.contact-box {
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  overflow: hidden;          /* wraps the two floated columns */
+}
+
+.info-column {               /* LEFT column */
+  float: left;
+  width: 40%;
+  text-align: center;
+}
+
+.form-column {               /* RIGHT column */
+  float: right;
+  width: 55%;
+}
+
+.info-column h3 {
+  margin: 0 0 8px 0;
+  font-size: 22px;
+}
+
+.bar {                       /* the short blue-gray line under headings */
+  width: 115px;
+  height: 4px;
+  margin: 0 auto 10px auto;
+  background-color: #6f87a3;
+}
+
+.info-column p {
+  margin: 0 0 40px 0;
+  font-size: 16px;
+  color: #555b66;
+}
+
+.form-column label {
+  display: block;
+  font-size: 19px;
+  margin-bottom: 3px;
+}
+
+.form-column input,
+.form-column textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #c9ced6;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-column textarea {
+  height: 110px;
+}
+
+.form-column input:focus,
+.form-column textarea:focus {
+  outline: 2px solid #2f72c4;   /* outline (from the lesson) */
+}
+
+.form-column button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2f72c4;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form-column button:hover {
+  background-color: #1f5aa3;
+}
+
+/* ---------- 7. FOOTER ---------- */
+footer {
+  background-color: #28334a;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding: 25px 0;
+}
